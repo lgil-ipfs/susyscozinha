@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Susy | Cozinha da Susy</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a></li>
+            <li><a href="about.html" class="active"><span class="lang-pt">Sobre</span><span
+                        class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="recipes.html"><span class="lang-pt">Receitas</span><span class="lang-en">Recipes</span> ▾</a>
+                <div class="dropdown-content">
+                    <a href="recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="recipes.html?cat=pratos"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="about-hero" style="text-align: center; margin-bottom: 3rem;">
+            <h1><span class="lang-pt">A História da Avó Susy</span><span class="lang-en">Grandma Susy's Story</span>
+            </h1>
+        </section>
+
+        <article class="about-content"
+            style="background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);">
+            <div style="float: right; margin: 0 0 1rem 1rem; width: 300px;">
+                <img src="images/hero_2.jpg" alt="Cozinha Algarvia" style="width: 100%; border-radius: 8px;">
+                <p style="font-size: 0.8rem; text-align: center; color: #666; margin-top: 0.5rem;"><span
+                        class="lang-pt">Memórias do Algarve</span><span class="lang-en">Memories of the Algarve</span>
+                </p>
+            </div>
+
+            <p style="margin-bottom: 1rem;">
+                <span class="lang-pt">
+                    A minha avó Susy nasceu numa pequena aldeia no coração do Algarve, onde o cheiro do mar se misturava
+                    com o aroma de laranjeiras e amendoeiras em flor. Desde muito jovem, aprendeu a arte da cozinha
+                    tradicional portuguesa com a sua mãe, usando apenas os ingredientes mais frescos da terra e do mar.
+                </span>
+                <span class="lang-en">
+                    My grandmother Susy was born in a small village in the heart of the Algarve, where the smell of the
+                    sea mixed with the scent of orange and almond trees in blossom. From a very young age, she learned
+                    the art of traditional Portuguese cooking from her mother, using only the freshest ingredients from
+                    the land and sea.
+                </span>
+            </p>
+
+            <p style="margin-bottom: 1rem;">
+                <span class="lang-pt">
+                    A sua cozinha era o centro da nossa casa. Era lá que as histórias eram contadas, onde as risadas
+                    ecoavam e onde a família se reunia todos os domingos. O segredo dela nunca foi um ingrediente caro
+                    ou uma técnica complicada, mas sim o amor e a paciência que dedicava a cada prato.
+                </span>
+                <span class="lang-en">
+                    Her kitchen was the center of our home. It was there that stories were told, where laughter echoed,
+                    and where the family gathered every Sunday. Her secret was never an expensive ingredient or a
+                    complicated technique, but rather the love and patience she dedicated to every dish.
+                </span>
+            </p>
+
+            <p style="margin-bottom: 1rem;">
+                <span class="lang-pt">
+                    Este site é uma homenagem a ela e uma forma de preservar o nosso património familiar. Aqui partilho
+                    as receitas originais, com os seus truques e notas pessoais ("o segredo está no refogado", dizia ela
+                    sempre), para que o sabor da Cozinha da Susy possa chegar à sua mesa também.
+                </span>
+                <span class="lang-en">
+                    This website is a tribute to her and a way to preserve our family heritage. Here I share her
+                    original recipes, with her tricks and personal notes ("the secret is in the sauté", she always
+                    said), so that the flavor of Susy's Kitchen can reach your table too.
+                </span>
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

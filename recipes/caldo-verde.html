@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caldo Verde | Cozinha da Susy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* Specific override or addition for Caldo Verde if needed, generally styles.css is enough */
+        .step-number {
+            background-color: #2E7D32;
+        }
+
+        /* Green for soup? No, stick to consistent blue */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a></li>
+            <li><a href="../about.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="../recipes.html"><span class="lang-pt">Receitas</span><span class="lang-en">Recipes</span>
+                    ▾</a>
+                <div class="dropdown-content">
+                    <a href="../recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="../recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="../recipes.html?cat=pratos-principais"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="../recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <a href="../recipes.html" class="back-link">← <span class="lang-pt">Voltar às Receitas</span><span
+                class="lang-en">Back to Recipes</span></a>
+
+        <header class="recipe-header">
+            <h1><span class="lang-pt">Caldo Verde</span><span class="lang-en">Portuguese Green Soup</span></h1>
+            <p class="subtitle"><span class="lang-pt">A alma de Portugal numa tigela</span><span class="lang-en">Wait,
+                    soul of Portugal in a bowl</span></p>
+        </header>
+
+        <img src="../images/caldo_verde.jpg" alt="Caldo Verde" class="recipe-hero-image">
+
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱</span>
+                <strong><span class="lang-pt">Prep</span><span class="lang-en">Prep</span></strong>
+                <p>15 min</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🔥</span>
+                <strong><span class="lang-pt">Cozedura</span><span class="lang-en">Cook</span></strong>
+                <p>30 min</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🍽</span>
+                <strong><span class="lang-pt">Doses</span><span class="lang-en">Servings</span></strong>
+                <p>6</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">📊</span>
+                <strong><span class="lang-pt">Dificuldade</span><span class="lang-en">Difficulty</span></strong>
+                <p><span class="lang-pt">Fácil</span><span class="lang-en">Easy</span></p>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <section class="ingredients-box">
+                <h2><span class="lang-pt">Ingredientes</span><span class="lang-en">Ingredients</span></h2>
+                <ul class="ingredients-list">
+                    <li><input type="checkbox"> <span class="lang-pt">500g de batatas</span><span class="lang-en">500g
+                            potatoes</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 chouriço de carne (corrente)</span><span
+                            class="lang-en">1 meat chorizo (current)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">400g de couve-galega cortada em caldo
+                            verde</span><span class="lang-en">400g kale/collard greens, thinly sliced</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 cebola</span><span class="lang-en">1
+                            onion</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">2 dentes de alho</span><span class="lang-en">2
+                            garlic cloves</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1dl de azeite</span><span class="lang-en">1dl
+                            olive oil</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">Sal q.b.</span><span class="lang-en">Salt to
+                            taste</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">2L de água</span><span class="lang-en">2L
+                            water</span></li>
+                </ul>
+
+                <div class="notes-section">
+                    <h4><span class="lang-pt">Notas da Avó Susy:</span><span class="lang-en">Grandma Susy's
+                            Notes:</span></h4>
+                    <p><span class="lang-pt">"O segredo é cortar a couve tão fina como fios de cabelo! E não te esqueças
+                            de pôr um fio de azeite cru no prato antes de servir, dá um brilho especial."</span>
+                        <span class="lang-en">"The secret is to slice the kale as thin as hair! And don't forget to
+                            drizzle raw olive oil on the plate just before serving, it gives it a special shine."</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="instructions-box">
+                <h2><span class="lang-pt">Instruções</span><span class="lang-en">Instructions</span></h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Descascar as batatas, a cebola e os dentes de alho. Cortá-los em
+                                pedaços grosseiros.</span>
+                            <span class="lang-en">Peel the potatoes, onion, and garlic cloves. Cut them into rough
+                                chunks.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Levar ao lume uma panela com a água, o chouriço inteiro, e os legumes
+                                (batata, cebola, alho). Deixar cozer até as batatas estarem macias.</span>
+                            <span class="lang-en">Place a pot on the stove with the water, the whole chorizo, and the
+                                vegetables (potato, onion, garlic). Cook until the potatoes are soft.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Retirar o chouriço e reservar. Triturar tudo o resto na panela com a
+                                varinha mágica até obter um puré líquido.</span>
+                            <span class="lang-en">Remove the chorizo and set aside. Blend everything else in the pot
+                                with an immersion blender until you have a smooth liquid purée.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Levar novamente ao lume. Quando ferver, juntar a couve-galega cortada
+                                em juliana muito fina. Deixar cozer cerca de 10-15 minutos com a tampa aberta (para a
+                                couve ficar verde).</span>
+                            <span class="lang-en">Return to the heat. When boiling, add the thinly sliced kale. Let cook
+                                for about 10-15 minutes with the lid off (to keep the kale green).</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Cortar o chouriço em rodelas e juntar à sopa. Rectificar o sal e juntar
+                                o azeite.</span>
+                            <span class="lang-en">Slice the chorizo into rounds and add to the soup. Adjust salt and add
+                                the olive oil.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Servir bem quente em tigelas de barro, com broa de milho.</span>
+                            <span class="lang-en">Serve piping hot in earthenware bowls, with cornbread.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="window.print()" class="cta-button" style="margin-top: 2rem;">🖨 <span
+                        class="lang-pt">Imprimir Receita</span><span class="lang-en">Print Recipe</span></button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

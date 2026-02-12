@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Cozinha da Susy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a></li>
+            <li><a href="about.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="recipes.html" class="active"><span class="lang-pt">Receitas</span><span
+                        class="lang-en">Recipes</span> ▾</a>
+                <div class="dropdown-content">
+                    <a href="recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="recipes.html?cat=pratos-principais"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1><span class="lang-pt">O Livro de Receitas</span><span class="lang-en">The Recipe Book</span></h1>
+        <div class="filter-controls" style="margin-bottom: 2rem;">
+            <!-- Simple filter implementation can be done via JS if needed, currently reusing search input -->
+            <p><span class="lang-pt">Explore os sabores autênticos da nossa família.</span><span class="lang-en">Explore
+                    the authentic flavors of our family.</span></p>
+        </div>
+
+        <div class="recipe-grid">
+            <!-- Polvo -->
+            <article class="recipe-card" data-tags="polvo, octopus, seascape, seafood, algarve"
+                data-category="pratos-principais">
+                <img src="images/polvo.jpg" alt="Polvo a Lagareiro" class="card-image">
+                <div class="card-content">
+                    <div class="card-tags">
+                        <span class="tag">Prato Principal</span>
+                        <span class="tag">Algarve</span>
+                    </div>
+                    <h3><span class="lang-pt">Polvo à Lagareiro</span><span class="lang-en">Lagareiro Style
+                            Octopus</span></h3>
+                    <p class="description">
+                        <span class="lang-pt">Polvo assado com batatas a murro e muito azeite.</span>
+                        <span class="lang-en">Roasted octopus with smashed potatoes and plenty of olive oil.</span>
+                    </p>
+                    <div class="recipe-info">
+                        <span>⏱ 1h 30m</span>
+                        <span>🍽 4 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                    </div>
+                    <a href="recipes/polvo-lagareiro.html" class="view-btn"><span class="lang-pt">Ver
+                            Receita</span><span class="lang-en">View Recipe</span></a>
+                </div>
+            </article>
+
+            <!-- Caldo Verde -->
+            <article class="recipe-card" data-tags="soup, kale, chourico, traditional" data-category="sopas">
+                <img src="images/caldo_verde.jpg" alt="Caldo Verde" class="card-image">
+                <div class="card-content">
+                    <div class="card-tags">
+                        <span class="tag">Sopa</span>
+                        <span class="tag">Minho</span>
+                    </div>
+                    <h3><span class="lang-pt">Caldo Verde</span><span class="lang-en">Portuguese Green Soup</span></h3>
+                    <p class="description">
+                        <span class="lang-pt">Sopa reconfortante de couve galega e chouriço.</span>
+                        <span class="lang-en">Comforting kale and chorizo soup.</span>
+                    </p>
+                    <div class="recipe-info">
+                        <span>⏱ 45m</span>
+                        <span>🍽 6 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                    </div>
+                    <a href="recipes/caldo-verde.html" class="view-btn"><span class="lang-pt">Ver Receita</span><span
+                            class="lang-en">View Recipe</span></a>
+                </div>
+            </article>
+
+            <!-- Cozido -->
+            <article class="recipe-card" data-tags="stew, meat, vegetable, family" data-category="pratos-principais">
+                <img src="images/cozido.jpg" alt="Cozido a Portuguesa" class="card-image">
+                <div class="card-content">
+                    <div class="card-tags">
+                        <span class="tag">Prato Principal</span>
+                        <span class="tag">Domingo</span>
+                    </div>
+                    <h3><span class="lang-pt">Cozido à Portuguesa</span><span class="lang-en">Portuguese Stew</span>
+                    </h3>
+                    <p class="description">
+                        <span class="lang-pt">O grande prato de domingo com carnes e legumes.</span>
+                        <span class="lang-en">The grand Sunday dish with meats and vegetables.</span>
+                    </p>
+                    <div class="recipe-info">
+                        <span>⏱ 2h 30m</span>
+                        <span>🍽 8 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                    </div>
+                    <a href="recipes/cozido-portuguesa.html" class="view-btn"><span class="lang-pt">Ver
+                            Receita</span><span class="lang-en">View Recipe</span></a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Check URL parameters for category filtering
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('cat');
+        if (category) {
+            const cards = document.querySelectorAll('.recipe-card');
+            cards.forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (cardCat === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            // Update heading or intro text if needed
+        }
+    </script>
+</body>
+
+</html>

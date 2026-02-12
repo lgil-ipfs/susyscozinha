@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozido à Portuguesa | Cozinha da Susy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        .step-number {
+            background-color: #D4704A;
+        }
+
+        /* Terracotta for cozido */
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a></li>
+            <li><a href="../about.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="../recipes.html"><span class="lang-pt">Receitas</span><span class="lang-en">Recipes</span>
+                    ▾</a>
+                <div class="dropdown-content">
+                    <a href="../recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="../recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="../recipes.html?cat=pratos-principais"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="../recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <a href="../recipes.html" class="back-link">← <span class="lang-pt">Voltar às Receitas</span><span
+                class="lang-en">Back to Recipes</span></a>
+
+        <header class="recipe-header">
+            <h1><span class="lang-pt">Cozido à Portuguesa</span><span class="lang-en">Portuguese Stew</span></h1>
+            <p class="subtitle"><span class="lang-pt">O rei dos pratos portugueses</span><span class="lang-en">The king
+                    of Portuguese dishes</span></p>
+        </header>
+
+        <img src="../images/cozido.jpg" alt="Cozido à Portuguesa" class="recipe-hero-image">
+
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱</span>
+                <strong><span class="lang-pt">Prep</span><span class="lang-en">Prep</span></strong>
+                <p>30 min</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🔥</span>
+                <strong><span class="lang-pt">Cozedura</span><span class="lang-en">Cook</span></strong>
+                <p>2h 30m</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🍽</span>
+                <strong><span class="lang-pt">Doses</span><span class="lang-en">Servings</span></strong>
+                <p>8</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">📊</span>
+                <strong><span class="lang-pt">Dificuldade</span><span class="lang-en">Difficulty</span></strong>
+                <p><span class="lang-pt">Média</span><span class="lang-en">Medium</span></p>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <section class="ingredients-box">
+                <h2><span class="lang-pt">Ingredientes</span><span class="lang-en">Ingredients</span></h2>
+                <ul class="ingredients-list">
+                    <li><input type="checkbox"> <span class="lang-pt">500g carne de vaca para cozer</span><span
+                            class="lang-en">500g stewing beef</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">500g entrecosto de porco</span><span
+                            class="lang-en">500g pork ribs</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 chouriço de carne</span><span class="lang-en">1
+                            meat chorizo</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 morcela</span><span class="lang-en">1 blood
+                            sausage (morcela)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 farinheira</span><span class="lang-en">1
+                            farinheira (flour sausage)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 couve coração grande</span><span
+                            class="lang-en">1 large cabbage (savoy or pointed)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">4 cenouras</span><span class="lang-en">4
+                            carrots</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">4 nabos</span><span class="lang-en">4
+                            turnips</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">8 batatas médias</span><span class="lang-en">8
+                            medium potatoes</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">Arroz e feijão branco cozido (para
+                            acompanhar)</span><span class="lang-en">Rice and cooked white beans (to serve)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">Sal e água q.b.</span><span class="lang-en">Salt
+                            and water, as needed</span></li>
+                </ul>
+
+                <div class="notes-section">
+                    <h4><span class="lang-pt">Notas da Avó Susy:</span><span class="lang-en">Grandma Susy's
+                            Notes:</span></h4>
+                    <p><span class="lang-pt">"O segredo do Cozido é a ordem em que se metem as coisas na panela. As
+                            carnes primeiro, as batatas por último. E a farinheira... põe sempre em cima das couves para
+                            não rebentar!"</span>
+                        <span class="lang-en">"The secret of the Cozido is the order you put things in the pot. Meats
+                            first, potatoes last. And the farinheira... always put it on top of the cabbage so it
+                            doesn't burst!"</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="instructions-box">
+                <h2><span class="lang-pt">Instruções</span><span class="lang-en">Instructions</span></h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Numa panela grande com água e sal, colocar as carnes (vaca e porco) e o
+                                chouriço. Deixar cozer em lume brando cerca de 1 hora e meia, retirando a espuma que se
+                                forma.</span>
+                            <span class="lang-en">In a large pot with salted water, place the meats (beef and pork) and
+                                the chorizo. Simmer for about 1.5 hours, skimming off any foam.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Quando as carnes estiverem quase tenras, adicionar as cenouras e os
+                                nabos descascados e cortados em quartos.</span>
+                            <span class="lang-en">When the meats are almost tender, add the peeled and quartered carrots
+                                and turnips.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Passados 15 minutos, juntar as batatas descascadas e a couve cortada em
+                                pedaços grandes.</span>
+                            <span class="lang-en">After 15 minutes, add the peeled potatoes and the cabbage cut into
+                                large chunks.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Colocar a morcela e a farinheira (picada com um palito) no topo. Cozer
+                                mais 20-30 minutos.</span>
+                            <span class="lang-en">Place the morcela and farinheira (pricked with a toothpick) on top.
+                                Cook for another 20-30 minutes.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Retirar as carnes e enchidos, cortá-los em pedaços de servir e dispor
+                                numa travessa grande, rodeados pelos legumes.</span>
+                            <span class="lang-en">Remove the meats and sausages, cut them into serving pieces, and
+                                arrange on a large platter surrounded by the vegetables.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Servir com o arroz (cozido com um pouco do caldo das carnes) e o feijão
+                                branco.</span>
+                            <span class="lang-en">Serve with the rice (cooked with some of the meat broth) and the white
+                                beans.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="window.print()" class="cta-button" style="margin-top: 2rem;">🖨 <span
+                        class="lang-pt">Imprimir Receita</span><span class="lang-en">Print Recipe</span></button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

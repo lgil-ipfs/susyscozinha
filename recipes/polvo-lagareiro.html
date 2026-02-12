@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polvo à Lagareiro | Cozinha da Susy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../index.html"><span class="lang-pt">Início</span><span class="lang-en">Home</span></a></li>
+            <li><a href="../about.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="../recipes.html"><span class="lang-pt">Receitas</span><span class="lang-en">Recipes</span>
+                    ▾</a>
+                <div class="dropdown-content">
+                    <a href="../recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="../recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="../recipes.html?cat=pratos-principais"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="../recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <a href="../recipes.html" class="back-link">← <span class="lang-pt">Voltar às Receitas</span><span
+                class="lang-en">Back to Recipes</span></a>
+
+        <header class="recipe-header">
+            <h1><span class="lang-pt">Polvo à Lagareiro</span><span class="lang-en">Lagareiro Style Octopus</span></h1>
+            <p class="subtitle"><span class="lang-pt">Um clássico do Algarve e de Portugal</span><span class="lang-en">A
+                    classic from the Algarve and Portugal</span></p>
+        </header>
+
+        <img src="../images/polvo.jpg" alt="Polvo à Lagareiro" class="recipe-hero-image">
+
+        <div class="recipe-meta">
+            <div class="meta-item">
+                <span class="meta-icon">⏱</span>
+                <strong><span class="lang-pt">Prep</span><span class="lang-en">Prep</span></strong>
+                <p>30 min</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🔥</span>
+                <strong><span class="lang-pt">Cozedura</span><span class="lang-en">Cook</span></strong>
+                <p>60 min</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">🍽</span>
+                <strong><span class="lang-pt">Doses</span><span class="lang-en">Servings</span></strong>
+                <p>4</p>
+            </div>
+            <div class="meta-item">
+                <span class="meta-icon">📊</span>
+                <strong><span class="lang-pt">Dificuldade</span><span class="lang-en">Difficulty</span></strong>
+                <p><span class="lang-pt">Média</span><span class="lang-en">Medium</span></p>
+            </div>
+        </div>
+
+        <div class="recipe-content">
+            <section class="ingredients-box">
+                <h2><span class="lang-pt">Ingredientes</span><span class="lang-en">Ingredients</span></h2>
+                <ul class="ingredients-list">
+                    <li><input type="checkbox"> <span class="lang-pt">1 polvo (aprox. 1.5kg)</span><span
+                            class="lang-en">1 octopus (approx. 1.5kg)</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1kg de batatinhas para assar</span><span
+                            class="lang-en">1kg small roasting potatoes</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">2dl de azeite virgem extra</span><span
+                            class="lang-en">2dl extra virgin olive oil</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">8 dentes de alho</span><span class="lang-en">8
+                            cloves of garlic</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 cebola</span><span class="lang-en">1
+                            onion</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">Sal grosso e pimenta q.b.</span><span
+                            class="lang-en">Coarse salt and pepper to taste</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">Coentros frescos picados</span><span
+                            class="lang-en">Chopped fresh coriander</span></li>
+                    <li><input type="checkbox"> <span class="lang-pt">1 folha de louro</span><span class="lang-en">1 bay
+                            leaf</span></li>
+                </ul>
+
+                <div class="notes-section">
+                    <h4><span class="lang-pt">Notas da Avó Susy:</span><span class="lang-en">Grandma Susy's
+                            Notes:</span></h4>
+                    <p><span class="lang-pt">"Para o polvo ficar tenrinho, eu costumo congelá-lo antes de cozer. E não
+                            se esqueçam de dar um murro nas batatas antes de irem ao forno - é isso que as faz absorver
+                            o azeite!"</span>
+                        <span class="lang-en">"To make the octopus tender, I usually freeze it before cooking. And don't
+                            forget to 'punch' (smash) the potatoes before they go in the oven - that's what makes them
+                            absorb the olive oil!"</span>
+                    </p>
+                </div>
+            </section>
+
+            <section class="instructions-box">
+                <h2><span class="lang-pt">Instruções</span><span class="lang-en">Instructions</span></h2>
+
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Cozer o polvo em água com a cebola descascada, a folha de louro e sal,
+                                durante cerca de 45 a 60 minutos, até ficar tenro. Escorrer e reservar.</span>
+                            <span class="lang-en">Boil the octopus in water with the peeled onion, bay leaf, and salt
+                                for about 45 to 60 minutes until tender. Drain and set aside.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Entretanto, lavar bem as batatas com a pele. Cozê-las em água com sal
+                                até estarem quase cozidas (al dente).</span>
+                            <span class="lang-en">Meanwhile, wash the potatoes well with their skin on. Boil them in
+                                salted water until they are almost cooked (al dente).</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Dispor as batatas num tabuleiro de forno e dar-lhes um pequeno "murro"
+                                para as esmagar ligeiramente.</span>
+                            <span class="lang-en">Place the potatoes on a baking tray and give them a small "punch" to
+                                smash them slightly.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Colocar o polvo no centro do tabuleiro, rodeado pelas batatas. Regar
+                                tudo generosamente com o azeite.</span>
+                            <span class="lang-en">Place the octopus in the center of the tray, surrounded by the
+                                potatoes. Drizzle everything generously with olive oil.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Espalhar os dentes de alho laminados ou esmagados por cima. Levar ao
+                                forno pré-aquecido a 200°C durante cerca de 20 minutos.</span>
+                            <span class="lang-en">Scatter the sliced or crushed garlic cloves on top. Roast in a
+                                preheated oven at 200°C (400°F) for about 20 minutes.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-text">
+                        <p><span class="lang-pt">Servir polvilhado com coentros frescos picados.</span>
+                            <span class="lang-en">Serve sprinkled with fresh chopped coriander.</span>
+                        </p>
+                    </div>
+                </div>
+
+                <button onclick="window.print()" class="cta-button" style="margin-top: 2rem;">🖨 <span
+                        class="lang-pt">Imprimir Receita</span><span class="lang-en">Print Recipe</span></button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

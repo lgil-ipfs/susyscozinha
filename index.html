@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha da Susy | Receitas Tradicionais Portuguesas</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Meta -->
+    <meta name="description"
+        content="Traditional Portuguese recipes from the Algarve region, featuring seafood, soups, and family favorites. Bilingual English/Portuguese.">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Cozinha da Susy Logo" class="logo-img"> Cozinha da Susy
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active"><span class="lang-pt">Início</span><span
+                        class="lang-en">Home</span></a></li>
+            <li><a href="about.html"><span class="lang-pt">Sobre</span><span class="lang-en">About</span></a></li>
+            <li class="dropdown">
+                <a href="recipes.html"><span class="lang-pt">Receitas</span><span class="lang-en">Recipes</span> ▾</a>
+                <div class="dropdown-content">
+                    <a href="recipes.html?cat=entradas"><span class="lang-pt">Entradas</span><span
+                            class="lang-en">Appetizers</span></a>
+                    <a href="recipes.html?cat=sopas"><span class="lang-pt">Sopas</span><span
+                            class="lang-en">Soups</span></a>
+                    <a href="recipes.html?cat=pratos"><span class="lang-pt">Pratos Principais</span><span
+                            class="lang-en">Main Dishes</span></a>
+                    <a href="recipes.html?cat=sobremesas"><span class="lang-pt">Sobremesas</span><span
+                            class="lang-en">Desserts</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-btn">🔍</button>
+                </div>
+            </li>
+            <li>
+                <button id="lang-toggle">🇬🇧 EN</button> <!-- Default shows switch to EN -->
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('images/hero_1.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero_2.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero_3.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Cozinha da Susy</h1>
+            <p><span class="lang-pt">Sabores autênticos do Algarve preservados com amor.</span><span
+                    class="lang-en">Authentic flavors of the Algarve preserved with love.</span></p>
+            <a href="recipes.html" class="cta-button"><span class="lang-pt">Ver Receitas</span><span
+                    class="lang-en">View Recipes</span></a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Featured Recipes -->
+        <section>
+            <h2><span class="lang-pt">Destaques da Cozinha</span><span class="lang-en">Kitchen Highlights</span></h2>
+            <div class="recipe-grid">
+
+                <!-- Recipe 1: Polvo -->
+                <article class="recipe-card" data-tags="polvo, octopus, seafood, algarve">
+                    <img src="images/polvo.jpg" alt="Polvo à Lagareiro" class="card-image">
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Prato Principal</span>
+                            <span class="tag">Algarve</span>
+                        </div>
+                        <h3><span class="lang-pt">Polvo à Lagareiro</span><span class="lang-en">Lagareiro Style
+                                Octopus</span></h3>
+                        <p class="description">
+                            <span class="lang-pt">Polvo tenro assado com azeite, alho e batatas a murro.</span>
+                            <span class="lang-en">Tender roasted octopus with olive oil, garlic, and smashed
+                                potatoes.</span>
+                        </p>
+                        <div class="recipe-info">
+                            <span>⏱ 1h 30m</span>
+                            <span>🍽 4 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                        </div>
+                        <a href="recipes/polvo-lagareiro.html" class="view-btn"><span class="lang-pt">Ver
+                                Receita</span><span class="lang-en">View Recipe</span></a>
+                    </div>
+                </article>
+
+                <!-- Recipe 2: Caldo Verde -->
+                <article class="recipe-card" data-tags="soup, kale, chourico, traditional">
+                    <img src="images/caldo_verde.jpg" alt="Caldo Verde" class="card-image">
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Sopa</span>
+                            <span class="tag">Tradicional</span>
+                        </div>
+                        <h3><span class="lang-pt">Caldo Verde</span><span class="lang-en">Portuguese Green Soup</span>
+                        </h3>
+                        <p class="description">
+                            <span class="lang-pt">A sopa mais icónica de Portugal com couve-galega e chouriço.</span>
+                            <span class="lang-en">Portugal's most iconic soup featuring kale and chorizo.</span>
+                        </p>
+                        <div class="recipe-info">
+                            <span>⏱ 45m</span>
+                            <span>🍽 6 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                        </div>
+                        <a href="recipes/caldo-verde.html" class="view-btn"><span class="lang-pt">Ver
+                                Receita</span><span class="lang-en">View Recipe</span></a>
+                    </div>
+                </article>
+
+                <!-- Recipe 3: Cozido -->
+                <article class="recipe-card" data-tags="stew, meat, hearty, family">
+                    <img src="images/cozido.jpg" alt="Cozido à Portuguesa" class="card-image">
+                    <div class="card-content">
+                        <div class="card-tags">
+                            <span class="tag">Prato Principal</span>
+                            <span class="tag">Família</span>
+                        </div>
+                        <h3><span class="lang-pt">Cozido à Portuguesa</span><span class="lang-en">Portuguese Stew</span>
+                        </h3>
+                        <p class="description">
+                            <span class="lang-pt">Um cozido rico de carnes, enchidos e vegetais variados.</span>
+                            <span class="lang-en">A rich boiled dinner of various meats, sausages, and
+                                vegetables.</span>
+                        </p>
+                        <div class="recipe-info">
+                            <span>⏱ 2h 30m</span>
+                            <span>🍽 8 <span class="lang-pt">Pessoas</span><span class="lang-en">Servings</span></span>
+                        </div>
+                        <a href="recipes/cozido-portuguesa.html" class="view-btn"><span class="lang-pt">Ver
+                                Receita</span><span class="lang-en">View Recipe</span></a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- About Teaser -->
+        <section style="margin-top: 4rem; text-align: center; background: white; padding: 3rem; border-radius: 8px;">
+            <h2><span class="lang-pt">Sobre a Avó Susy</span><span class="lang-en">About Grandma Susy</span></h2>
+            <p style="max-width: 600px; margin: 1rem auto;">
+                <span class="lang-pt">Nascida nas colinas do Algarve, a avó Susy cozinhava com o coração. Estas receitas
+                    são o seu legado de amor e tradição.</span>
+                <span class="lang-en">Born in the hills of the Algarve, Grandma Susy cooked with her heart. These
+                    recipes are her legacy of love and tradition.</span>
+            </p>
+            <a href="about.html" class="cta-button"
+                style="background-color: var(--primary-blue); margin-top: 1rem;"><span class="lang-pt">Ler a
+                    História</span><span class="lang-en">Read Her Story</span></a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>Cozinha da Susy</h3>
+            <p>&copy; 2024 - <span class="lang-pt">Feito com amor pela família.</span><span class="lang-en">Made with
+                    love by the family.</span></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

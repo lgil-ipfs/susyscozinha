@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Azulejo Tile Background -->
+  <rect x="5" y="5" width="90" height="90" rx="10" fill="#F8F4EE" stroke="#1B4B7F" stroke-width="3"/>
+  
+  <!-- Corner Flourishes (Blue) -->
+  <path d="M15,15 Q30,15 30,30 M15,30 Q15,15 30,15" fill="none" stroke="#1B4B7F" stroke-width="2"/>
+  <path d="M85,15 Q70,15 70,30 M85,30 Q85,15 70,15" fill="none" stroke="#1B4B7F" stroke-width="2"/>
+  <path d="M15,85 Q30,85 30,70 M15,70 Q15,85 30,85" fill="none" stroke="#1B4B7F" stroke-width="2"/>
+  <path d="M85,85 Q70,85 70,70 M85,70 Q85,85 70,85" fill="none" stroke="#1B4B7F" stroke-width="2"/>
+
+  <!-- Inner Decorative Circle (Blue) -->
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#4A7BA7" stroke-width="2" stroke-dasharray="4,2"/>
+
+  <!-- Center Icon: Stylized Spoon & Steam (Terracotta) -->
+  <!-- Spoon Handle -->
+  <path d="M50,75 L50,55" stroke="#D4704A" stroke-width="4" stroke-linecap="round"/>
+  <!-- Spoon Bowl -->
+  <ellipse cx="50" cy="45" rx="10" ry="14" fill="#D4704A"/>
+  <!-- Pot/Steam lines above -->
+  <path d="M40,25 Q45,20 50,25 T60,25" fill="none" stroke="#1B4B7F" stroke-width="2" opacity="0.6"/>
+  <path d="M45,30 Q50,25 55,30" fill="none" stroke="#1B4B7F" stroke-width="2" opacity="0.6"/>
+
+</svg>
